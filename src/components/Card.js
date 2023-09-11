@@ -6,13 +6,13 @@ import {AiOutlineLike} from "react-icons/ai"
 function Card({movie}) {
   return (
     <div className='cursor-pointer sm:hover:shadow-slate-400 sm:border sm:shadow-md rounded-lg sm:p-3 sm:m-2 sm:border-slate-400 transition-shadow duration-200 group'>
-      <Link href={`/movies/${movie.id}`}>
+      <Link href={`/movie/${movie.id}`}>
         <Image 
         src={`https://image.tmdb.org/t/p/original${movie.backdrop_path || movie.poster_path}`}
         width={500}
         height={300}
 
-        className='sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200'
+        className='mx-auto sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200'
         style={{maxWidth: "100%",
         height: "auto"}}
 
