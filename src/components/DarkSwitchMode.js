@@ -7,8 +7,7 @@ function DarkSwitchMode() {
     const {systemTheme,theme, setTheme} = useTheme();
     const currentTheme = theme === "system" ? systemTheme : theme;
     const [mounted, setMounted] = useState();
-    useEffect(()=>setMounted(true), [])
-    console.log(theme);
+    useEffect(()=>setMounted(true), []);
   return (
     <>
     {/* mounted state is added to make sure the page is mounted completely before using a switch mode */}
